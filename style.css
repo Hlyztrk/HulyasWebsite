@@ -366,7 +366,7 @@ section{
 }
 
 .skills .progress .bar{
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 70rem;
     border: var(--border-black);
     padding: 0.6rem;
@@ -379,6 +379,19 @@ section{
     font-size: 1.6rem;
     padding: 1.2rem;
     background-color: var(--blue);
+    opacity: 0;
+    animation: prog 2s ease-in-out forwards ;
+}
+
+@keyframes prog {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 .skills .progress .bar span{
@@ -386,11 +399,11 @@ section{
 }
 
 .skills .progress .bar:nth-child(1) h3{
-    width: 65%;
+    width: 50%;
 }
 
 .skills .progress .bar:nth-child(2) h3{
-    width: 70%;
+    width: 65%;
 }
 
 .skills .progress .bar:nth-child(3) h3{
@@ -398,15 +411,19 @@ section{
 }
 
 .skills .progress .bar:nth-child(4) h3{
-    width: 50%;
+    width: 55%;
 }
 
 .skills .progress .bar:nth-child(5) h3{
-    width: 65%;
+    width: 50%;
 }
 
 .skills .progress .bar:nth-child(6) h3{
-    width: 70%;
+    width: 50%;
+}
+
+.skills .progress .bar:nth-child(7) h3{
+    width: 50%;
 }
 
 .certifications{
